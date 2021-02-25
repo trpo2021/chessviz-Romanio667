@@ -2,6 +2,6 @@
 
 int main()
 {
-  FILE ptrFile=fopen("WEB.html","w");
+  printf("eeeeeeeeeeeee");
     return 0;
 }

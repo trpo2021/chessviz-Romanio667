@@ -1,2 +1,3 @@
-chess:	chess.c
-	gcc -o chess -Wall -Werror chess.c
+chessCPP:	chessCPP.cpp
+	g++ -o chessCPP -Wall -Werror chessCPP.cpp
+	./chessCPP
