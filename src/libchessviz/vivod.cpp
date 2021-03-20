@@ -1,4 +1,4 @@
-#include "libchessviz/vivod.h"
+#include <libchessviz/vivod.h>
 #include <iostream>
 #include <stdio.h>
 using namespace std;

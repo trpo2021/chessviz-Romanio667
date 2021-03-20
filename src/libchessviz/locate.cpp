@@ -1,4 +1,4 @@
-#include "libchessvizvivod.h"
+#include <libchessviz/vivod.h>
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 char locate(char chessboard[11][11])
 {
 	char sline1, sline2, temp;
-	int column1, column2, rline1, rline2, flag, trash;
+	int column1, column2, rline1, rline2, flag;
 
 	cin >> sline1;
 	cin >> column1;
@@ -51,15 +51,15 @@ char locate(char chessboard[11][11])
 	else
 		flag = 1;
 
-	if (column1 >= 1 && column1 <= 8)
-		trash = flag;
-	else
+	if (column1 < 1 && column1 > 8)
 		flag = 1;
+		//trash = flag;
+		
 
-	if (column2 >= 1 && column2 <= 8)
-		trash = flag;
-	else
+	if (column2 < 1 && column2 > 8)
 		flag = 1;
+		//trash = flag;
+		
 
 	if (flag == 0) {
 		temp = chessboard[column1 - 1][rline1];
