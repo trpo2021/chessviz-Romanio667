@@ -1,1 +1,5 @@
-ChessCPP
+
+*.a
+*.d
+*.o
+bin/chessviz
