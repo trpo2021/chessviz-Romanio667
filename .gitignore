@@ -9,5 +9,6 @@
 *.a
 *.d
 
+bin/chessviz
 .vscode
 
