@@ -1,3 +1,4 @@
+#include <libchessviz/checktab.h>
 int checktab(int tab)
 {
     int i, flag1 = 0;

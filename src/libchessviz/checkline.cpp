@@ -1,3 +1,4 @@
+#include <libchessviz/checkline.h>
 int checkline(char stroka)
 {
     if (stroka == 'a')
