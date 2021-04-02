@@ -1,6 +1,7 @@
 #include <iostream>
 #include <libchessviz/checkline.h>
 #include <libchessviz/checktab.h>
+#include <libchessviz/error.h>
 #include <libchessviz/vivod.h>
 #include <stdio.h>
 using namespace std;
@@ -35,6 +36,8 @@ char locate(char chessboard[11][11])
         chessboard[column1 - 1][rline1] = ' ';
         chessboard[column2 - 1][rline2] = temp;
         vivod(chessboard);
+    } else {
+        error(1);
     }
 
     return chessboard[9][10];
