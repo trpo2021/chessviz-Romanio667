@@ -1,0 +1,2 @@
+#pragma once
+CTEST(int carithmetic_suite,int simple_sum);
